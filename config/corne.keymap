@@ -72,10 +72,10 @@
 
         parenths {
             bindings = <
-&trans  &trans  &trans  &trans  &trans        &trans    &trans  &trans        &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &kp NUMBER_3  &trans    &trans  &kp NUMBER_3  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans        &trans    &trans  &trans        &trans  &trans  &trans  &trans
-                        &trans  &trans        &trans    &trans  &trans        &trans
+&trans  &trans  &trans  &trans  &trans        &trans    &trans    &trans  &trans    &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &kp NUMBER_3  &trans    &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans        &trans    &trans    &trans  &trans    &trans     &trans  &trans
+                        &trans  &trans        &trans    &trans    &trans  &trans
             >;
         };
     };
