@@ -15,11 +15,6 @@
             bindings = <&kp ESCAPE>;
             key-positions = <16 19>;
         };
-
-        layer3 {
-            bindings = <&mo 3>;
-            key-positions = <37 40>;
-        };
     };
 
     keymap {
@@ -51,7 +46,7 @@
 &kp TAB    &trans           &trans       &kp ASTERISK  &kp AMPERSAND  &kp LCTRL      &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &kp BSPC
 &trans     &kp EXCLAMATION  &kp AT_SIGN  &kp HASH      &kp DOLLAR     &kp PERCENT    &kp N0        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
 &kp LSHFT  &trans           &trans       &trans        &trans         &trans         &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
-                                         &kp LGUI      &trans         &kp RET        &kp SPACE     &trans        &kp RALT
+                                         &kp LGUI      &trans         &kp RET        &kp SPACE     &mo 3         &kp RALT
             >;
         };
 
@@ -66,11 +61,11 @@
 &trans  &trans     &trans          &trans            &trans                &trans       &trans     &trans                 &trans             &trans           &trans    &kp BSPC
 &trans  &kp TILDE  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &trans       &trans     &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp BSLH  &kp GRAVE
 &trans  &trans     &trans          &trans            &kp UNDERSCORE        &kp MINUS    &kp PLUS   &kp EQUAL              &kp COMMA          &trans           &kp PIPE  &trans
-                                   &kp LGUI          &trans                &kp RET      &kp SPACE  &trans                 &kp RALT
+                                   &kp LGUI          &mo 3                 &kp RET      &kp SPACE  &trans                 &kp RALT
             >;
         };
 
-        parenths {
+        nav {
             bindings = <
 &trans  &trans  &trans  &trans  &trans        &trans    &trans    &trans    &trans  &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &kp NUMBER_3  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
