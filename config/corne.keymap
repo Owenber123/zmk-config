@@ -44,10 +44,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &trans           &trans       &kp ASTERISK  &kp AMPERSAND  &kp LCTRL      &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &kp BSPC
-&trans     &kp EXCLAMATION  &kp AT_SIGN  &kp HASH      &kp DOLLAR     &kp PERCENT    &kp N0        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
-&kp LSHFT  &trans           &trans       &trans        &trans         &trans         &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
-                                         &kp LGUI      &trans         &kp RET        &kp SPACE     &mo 3         &kp RALT
+&kp TAB    &trans           &trans       &kp ASTERISK  &kp AMPERSAND  &kp LCTRL      &trans        &kp NUMBER_7  &kp NUMBER_8     &kp NUMBER_9  &trans  &kp BSPC
+&trans     &kp EXCLAMATION  &kp AT_SIGN  &kp HASH      &kp DOLLAR     &kp PERCENT    &kp N0        &kp NUMBER_4  &kp NUMBER_5     &kp NUMBER_6  &trans  &trans
+&kp LSHFT  &trans           &trans       &trans        &trans         &trans         &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2     &kp NUMBER_3  &trans  &kp RIGHT_ALT
+                                         &kp LGUI      &trans         &kp RET        &kp SPACE     &mo 3         &kp RIGHT_SHIFT
             >;
         };
 
@@ -68,10 +68,10 @@
 
         nav {
             bindings = <
-&trans      &kp F1        &kp F2        &kp F3             &kp F4           &kp F5              &kp F6    &kp F7    &kp F8  &kp F9     &kp F10  &trans
-&trans      &kp C_PREV    &kp C_NEXT    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PLAY_PAUSE    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans   &trans
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4        &trans    &trans    &trans  &trans     &trans   &trans
-                                        &trans             &trans           &trans              &trans    &trans    &trans
+&trans      &kp F1        &kp F2        &kp F3             &kp F4           &kp F5              &kp F6    &kp F7         &kp F8       &kp F9     &kp F10  &trans
+&trans      &kp C_PREV    &kp C_NEXT    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PLAY_PAUSE    &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &trans   &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4        &trans    &kp PAGE_DOWN  &kp PAGE_UP  &trans     &trans   &trans
+                                        &trans             &trans           &trans              &trans    &trans         &trans
             >;
         };
     };
