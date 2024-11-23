@@ -49,10 +49,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB           &trans           &trans       &kp ASTERISK  &kp AMPERSAND  &kp CARET      &trans        &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9  &trans        &trans
-&kp LEFT_CONTROL  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH      &kp DOLLAR     &kp PERCENT    &kp N0        &kp NUMBER_4  &kp NUMBER_5   &kp NUMBER_6  &kp NUMBER_0  &trans
-&kp LSHFT         &trans           &trans       &to 0         &to 4          &trans         &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &trans        &trans
-                                                &kp LGUI      &trans         &kp RET        &kp SPACE     &mo 3         &kp BACKSPACE
+&trans  &trans           &trans       &kp ASTERISK  &kp AMPERSAND  &kp CARET      &trans     &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9  &trans        &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH      &kp DOLLAR     &kp PERCENT    &trans     &kp NUMBER_4  &kp NUMBER_5   &kp NUMBER_6  &kp NUMBER_0  &trans
+&trans  &trans           &trans       &to 0         &to 5          &to 4          &trans     &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &trans        &trans
+                                      &kp TAB       &trans         &kp RET        &kp SPACE  &mo 3         &kp BACKSPACE
             >;
         };
 
@@ -82,10 +82,19 @@
 
         dvorak {
             bindings = <
-&trans  &kp APOS          &kp COMMA       &kp DOT             &kp P           &kp Y        &kp F      &kp G  &kp C          &kp R  &kp L  &trans
-&trans  &mt LEFT_SHIFT A  &mt LEFT_ALT O  &mt LEFT_CONTROL E  &mt LEFT_GUI U  &kp I        &kp D      &kp H  &kp T          &kp N  &kp S  &kp MINUS
-&trans  &kp SEMI          &kp Q           &kp J               &kp K           &kp X        &kp B      &kp M  &kp W          &kp V  &kp Z  &trans
-                                          &kp TAB             &mo 1           &kp ENTER    &kp SPACE  &mo 2  &kp BACKSPACE
+&trans  &kp APOS          &kp COMMA       &kp DOT         &kp P               &kp Y        &kp F      &kp G                &kp C            &kp R            &kp L              &trans
+&trans  &mt LEFT_SHIFT A  &mt LEFT_ALT O  &mt LEFT_GUI E  &mt LEFT_CONTROL U  &kp I        &kp D      &mt RIGHT_CONTROL H  &mt RIGHT_GUI T  &mt RIGHT_ALT N  &mt RIGHT_SHIFT S  &trans
+&trans  &kp SEMI          &kp Q           &kp J           &kp K               &kp X        &kp B      &kp M                &kp W            &kp V            &kp Z              &trans
+                                          &kp TAB         &mo 1               &kp ENTER    &kp SPACE  &mo 2                &kp BACKSPACE
+            >;
+        };
+
+        colemak {
+            bindings = <
+&trans  &kp Q             &kp W           &kp F           &kp P               &kp G        &kp J      &kp L                &kp U            &kp Y            &kp SEMI           &trans
+&trans  &mt LEFT_SHIFT A  &mt LEFT_ALT R  &mt LEFT_GUI S  &mt LEFT_CONTROL T  &kp D        &kp H      &mt RIGHT_CONTROL N  &mt RIGHT_GUI E  &mt RIGHT_ALT I  &mt RIGHT_SHIFT O  &trans
+&trans  &kp Z             &kp X           &kp C           &kp V               &kp B        &kp K      &kp M                &kp COMMA        &kp DOT          &kp FSLH           &trans
+                                          &kp TAB         &mo 1               &kp ENTER    &kp SPACE  &mo 2                &kp BSPC
             >;
         };
     };
