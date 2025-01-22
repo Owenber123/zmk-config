@@ -21,6 +21,11 @@
             bindings = <&kp ESCAPE>;
             key-positions = <16 19>;
         };
+
+        quotes {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <7 8>;
+        };
     };
 
     macros {
