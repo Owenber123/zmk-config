@@ -40,6 +40,13 @@
             bindings = <&kp LC(B) &kp RIGHT_PARENTHESIS>;
             label = "TMUX_NEXT";
         };
+
+        secretMessage: secretMessage {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(H) &kp E &kp L &kp L &kp O &kp SPACE &kp F &kp R &kp O &kp M &kp SPACE &kp M &kp Y &kp SPACE &kp K &kp E &kp Y &kp B &kp O &kp A &kp R &kp D &kp DOT>;
+            label = "SECRETMESSAGE";
+        };
     };
 
     keymap {
@@ -53,7 +60,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&trans  &kp Q             &kp W           &kp E           &kp R               &kp T      &kp Y      &kp U  &kp I          &kp O            &kp P                 &trans
+&trans  &kp Q             &kp W           &kp E           &kp R               &kp T      &kp Y      &kp U  &kp I          &kp O            &kp P                 &secretMessage
 &trans  &mt LEFT_SHIFT A  &mt LEFT_ALT S  &mt LEFT_GUI D  &mt LEFT_CONTROL F  &kp G      &kp H      &kp J  &kp K          &mt RIGHT_ALT L  &mt RIGHT_SHIFT SEMI  &trans
 &trans  &kp Z             &kp X           &kp C           &kp V               &kp B      &kp N      &kp M  &kp COMMA      &kp DOT          &kp FSLH              &trans
                                           &kp TAB         &mo 2               &kp RET    &kp SPACE  &mo 3  &kp BACKSPACE
