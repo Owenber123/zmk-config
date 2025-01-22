@@ -26,6 +26,11 @@
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <7 8>;
         };
+
+        single_quote {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <4 3>;
+        };
     };
 
     macros {
